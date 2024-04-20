@@ -8,30 +8,63 @@
 </head>
 <body class="font-sans bg-gray-100">
     <!-- Top navigation -->
-    <nav class="bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <!-- Logo -->
-                <div class="text-xl font-bold">AliExpress</div>
-                <!-- Search bar -->
-                <div class="w-96">
-                    <input type="text" placeholder="Search for products..." class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring focus:border-blue-300">
-                </div>
-                <!-- User profile and cart -->
-                <div>
-                    <!-- User profile icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-600 inline-block mr-4" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                        <path fill-rule="evenodd" d="M10 0C4.48 0 0 4.48 0 10c0 2.994 1.308 5.706 3.38 7.586l.004.004c.38.33.865.514 1.366.514H15.25c.501 0 .987-.184 1.366-.514l.004-.004C18.692 15.706 20 12.994 20 10c0-5.52-4.48-10-10-10zm7.5 10c0 4.143-3.357 7.5-7.5 7.5s-7.5-3.357-7.5-7.5S5.357 2.5 9.5 2.5 17 5.857 17 10zm-2.5 2.5c-2.33 0-4.364-.984-5.825-2.502l1.17-1.17a3.5 3.5 0 114.955 4.955l-1.413 1.414a5 5 0 10-7.07-7.072l1.414-1.415A3.5 3.5 0 1114.5 12.5z" clip-rule="evenodd" />
-                    </svg>
-                    <!-- Shopping cart icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-600 inline-block" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10 0C4.48 0 0 4.48 0 10c0 2.89 1.208 5.49 3.138 7.36c.377.414.894.64 1.428.64H15.43c.534 0 1.05-.226 1.428-.64C18.792 15.49 20 12.89 20 10c0-5.52-4.48-10-10-10zm7.5 10c0 4.14-3.36 7.5-7.5 7.5s-7.5-3.36-7.5-7.5S5.36 2.5 9.5 2.5s7.5 3.36 7.5 7.5zm-2.5 0c0 1.38-1.12 2.5-2.5 2.5s-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5zM8 15a2 2 0 114 0H8z" clip-rule="evenodd" />
-                    </svg>
-                </div>
+    <header class="sticky top-0 z-50">
+        
+    <!-- Navbar -->
+        <nav class="bg-green-800 p-4 ">
+            <div class="container mx-auto flex justify-between items-center">
+                <img  src="https://img.icons8.com/stickers/50/hops.png"  alt="hops"/>
+                <a href="#" class="text-white text-2xl font-bold">HerbalExpress</a>           
+                <ul class="flex space-x-4 btn">
+                    <li>
+                    <!-- Search Bar -->
+                        <form>
+                            <input type="text" placeholder="Search..." class="px-2 py-1 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 ">
+                            <button type="submit" class="px-3 py-1 bg-green-600 text-white rounded-md hover:bg-green-700">
+                                <svg fill="currentColor" class="h-5 w-5" viewBox="0 0 20 20" >
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" />
+                                </svg>
+
+                            </button>
+                        </form>                   
+                    </li>
+                    <li><a href="#" class="text-white hover:bg-green-600 px-3 py-2  rounded-full ">Home</a></li>
+                    <li><a href="#" class="text-white hover:bg-green-600 px-3 py-2  rounded-full">Shop</a></li>
+                    <li><a href="#" class="text-white hover:bg-green-600 px-3 py-2  rounded-full">About</a></li>
+                    <li><a href="#" class="text-white hover:bg-green-600 px-3 py-2  rounded-full">Contact</a></li>               
+                </ul>
             </div>
-        </div>
-    </nav>
+        </nav>
+      
+        <nav class="bg-green-800 text-gray-800 py-2 ">
+            <div class="container mx-auto flex justify-between items-center">
+                <button class="btn bg-white-500 text-white  text-md hover:bg-green-600  hover:text-white border border-white-500 rounded shadow font-bold py-2 px-4 mx-4 rounded-full "><a href="">Category</a>           
+                </button>                 
+                <ul class="flex space-x-4 text-white">
+                    
+                    <li><a href="#" class="hover:text-gray-600 ">Category 1</a></li>
+                    <li><a href="#" class="hover:text-gray-600">Category 2</a></li>
+                    <li><a href="#" class="hover:text-gray-600">Category 3</a></li>
+                    <li><a href="#" class="hover:text-gray-600">Category 4</a></li>
+                </ul>
+                <ul class="flex items-center navitems text-white btn">
+                    <li><a href="">
+                        <img class="h-8" src="https://img.icons8.com/dotty/80/ffffff/shopping-cart.png" alt="shopping-cart"/>
+                        Cart
+                        </a></li>
+                    <li><a href="">
+                        <img class="h-7 rounded-full object-cover bg-white " src="https://img.icons8.com/ios/50/000000/gender-neutral-user--v1.png" alt="gender-neutral-user--v1"/>
+                        Abbatronics 
+                        <img class="w-4" src="https://img.icons8.com/small/46/ffffff/expand-arrow.png" alt="expand-arrow"/>
+                        </a>
+                    </li>
+                    <li><a href="">Sign-In/Vendor</a></li>
+                    <li><a href="">Logout</a></li>
+                </ul>
+            
+            </div>
+        </nav>
+    </header> 
 
     <!-- Product Details -->
     <div class="max-w-7xl mx-auto px-4 mt-8">
